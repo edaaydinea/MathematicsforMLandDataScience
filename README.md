@@ -8,7 +8,7 @@
 #### Courses in this Specialization
 1. Linear Algebra for Machine Learning and Data Science
    - **Status:** [Completed / **In Progress** / Not Started]
-   - **Link:** [[URL to course page, if available]](https://www.coursera.org/learn/machine-learning-linear-algebra?specialization=mathematics-for-machine-learning-and-data-science)
+   - **Link:** https://www.coursera.org/learn/machine-learning-linear-algebra?specialization=mathematics-for-machine-learning-and-data-science
 
 2. Calculus for Machine Learning and Data Science
    - **Status:** [Completed / In Progress / **Not Started**]
