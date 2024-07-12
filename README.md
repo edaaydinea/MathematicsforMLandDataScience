@@ -22,10 +22,13 @@
 
 ## Other Activities
 
-### C1_W1_Lab_1_introduction_to_numpy_arrays
+### Introduction to Python Matrices and NumPy
 - **Status:** [**Completed** / In Progress / Not Started]
 - **Link:** https://github.com/edaaydinea/Mathematics-for-ML-Data-Science/blob/main/C1_W1_Lab_1_introduction_to_numpy_arrays.ipynb
 
+### Representing Systems of Equations as Matrices
+- **Status:** [**Completed** / In Progress / Not Started]
+- **Link:** https://github.com/edaaydinea/Mathematics-for-ML-Data-Science/blob/main/C1_W1_Lab_2_linear_systems_as_matrices.ipynb
 ...
 
 ## Certificates
