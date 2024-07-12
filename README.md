@@ -24,7 +24,7 @@
 
 ### C1_W1_Lab_1_introduction_to_numpy_arrays
 - **Status:** [**Completed** / In Progress / Not Started]
-- **Link:** [URL to activity page, if available]
+- **Link:** https://github.com/edaaydinea/Mathematics-for-ML-Data-Science/blob/main/C1_W1_Lab_1_introduction_to_numpy_arrays.ipynb
 
 ...
 
