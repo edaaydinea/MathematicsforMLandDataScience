@@ -2,7 +2,7 @@
 
 - **Where:** Coursera
 - **University\Institute:** DeepLearning.AI
-- **Status:** [Completed / **In Progress** / Not Started]
+- **Status:** In Progress
 
 ## Courses in this Specialization
 
@@ -38,10 +38,9 @@
   - [Linear Transformations](L1\W3\C1_W3_Lab_3_Linear_transformations.ipynb)
   - [Linear Transformations and Neural Networks](L1\W3\C1W3_Assignment.ipynb)
 
-
-- Week 4: 
-- [Interpreting Eigenvalues and Eigenvectors](L1\W4\C1_W4_Lab_1_Interpreting_eigenvalues_and_eigenvectors.ipynb)
-- [Eigenvalues and Eigenvectors in Python](L1\W4\C1W4_Assignment.ipynb)
+- Week 4: Determinants and Eigenvalues
+  - [Interpreting Eigenvalues and Eigenvectors](L1\W4\C1_W4_Lab_1_Interpreting_eigenvalues_and_eigenvectors.ipynb)
+  - [Eigenvalues and Eigenvectors in Python](L1\W4\C1W4_Assignment.ipynb)
 
 ...
 
