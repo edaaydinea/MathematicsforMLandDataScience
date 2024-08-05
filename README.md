@@ -47,4 +47,4 @@
 
 ## Certificates
 
-- **[Course 1: Linear Algebra for Machine Learning and Data Science]**
+- [**Course 1: Linear Algebra for Machine Learning and Data Science**](https://coursera.org/share/1b394cac27a8c72f89cf972124ed381e)
