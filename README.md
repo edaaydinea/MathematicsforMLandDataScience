@@ -33,9 +33,9 @@
   - [Gaussian Elimination](L1/W2/C1W2_Assignment.ipynb)
 
 - **Week 3: Vectors and Linear Transformations**
-  - [Vector Operations: Scalar Multiplication, Sum and Dot Product of Vectors](L1/W3/C1_W3_Lab_1_Vector_operations.ipynb)
-  - [Matrix Multiplication](L1/W3/C1_W3_Lab_2_Matrix_multiplication.ipynb)
-  - [Linear Transformations](L1/W3/C1_W3_Lab_3_Linear_transformations.ipynb)
+  - [Vector Operations: Scalar Multiplication, Sum and Dot Product of Vectors](L1/W3/C1W3_UGL_1_vector_operations.ipynb)
+  - [Matrix Multiplication](L1/W3//C1W3_UGL_2_matrix_multiplication.ipynb)
+  - [Linear Transformations](L1/W3/C1W3_UGL_3_linear_transformations.ipynb)
   - [Linear Transformations and Neural Networks](L1/W3/C1W3_Assignment.ipynb)
 
 - **Week 4: Determinants and Eigenvalues**
