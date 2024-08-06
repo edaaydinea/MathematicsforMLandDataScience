@@ -49,6 +49,9 @@
   - [Monty Hall Problem](L3/W1/C3_W1_Lab_1_Monty_Hall.ipynb)
   - [Birthday Problem](L3/W1/C3_W1_Lab_2_Birthday_Problems.ipynb)
   - [Lecture Note 2](L3/W1/lecture_note2.md)
+  - [Intro to Pandas World Happiness](L3/W1/intro-to-pandas-world-happiness.ipynb)
+  - [Rideshare Project](L3/W1/Rideshare_Project_Week1.ipynb)
+  - [Naive Bayes](L3/W1/C3W1_Assignment.ipynb)
 - **Week 2: Describing probability distributions and probability distributions with multiple variables**
 - **Week 3: Sampling and Point estimation**
 - **Week 4: Confidence intervals and Hypothesis Testing**
