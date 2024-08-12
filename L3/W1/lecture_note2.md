@@ -498,8 +498,7 @@ In communications, understanding noise and its impact on transmitted signals is 
 - **Single Degree of Freedom:** For $Z$ following a standard normal distribution, $W = Z^2$ follows a Chi-squared distribution with 1 degree of freedom.
 
   - **PDF:** The probability density function (PDF) of a Chi-squared distribution with 1 degree of freedom is:
-    $$  f_W(w) = \frac{1}{\sqrt{2\pi w}} \exp \left(-\frac{w}{2} \right) \text{ for } w > 0
-    \]
+    $$f_W(w) = \frac{1}{\sqrt{2\pi w}} \exp \left(-\frac{w}{2} \right) \text{ for } w > 0$$
     This PDF shows a distribution that starts high for small values of $w$ and tapers off for larger values.
 
   - **CDF:** The cumulative distribution function (CDF) of the Chi-squared distribution can be obtained by integrating the PDF.
