@@ -8,9 +8,9 @@
 2. **Example Problem: Probability of Playing Soccer**
    - Scenario: A school with 10 kids; 3 play soccer, 7 don't.
    - Objective: Find the probability that a randomly picked kid plays soccer.
-   - Notation: \( P(\text{soccer}) \) represents the probability of a kid playing soccer.
-   - Formula: \( \text{Probability} = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} \).
-   - Calculation: \( P(\text{soccer}) = \frac{3}{10} = 0.3 \) or 30%.
+   - Notation: $P(\text{soccer})$ represents the probability of a kid playing soccer.
+   - Formula: $\text{Probability} = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}}$.
+   - Calculation: $P(\text{soccer}) = \frac{3}{10} = 0.3$ or 30%.
 
 3. **Venn Diagram Representation**
    - Total population (10 kids) is represented by a green rectangle.
@@ -19,8 +19,8 @@
 
 4. **Coin Flipping Example**
    - Experiment: Flipping a fair coin.
-   - Probability of heads: \( P(\text{heads}) = \frac{1}{2} = 0.5 \) or 50%.
-   - Probability of tails: \( P(\text{tails}) = \frac{1}{2} = 0.5 \) or 50%.
+   - Probability of heads: $P(\text{heads}) = \frac{1}{2} = 0.5$ or 50%.
+   - Probability of tails: $P(\text{tails}) = \frac{1}{2} = 0.5$ or 50%.
 
 5. **Two Coins Flipping**
    - Possible outcomes: Heads-heads, heads-tails, tails-heads, tails-tails.
