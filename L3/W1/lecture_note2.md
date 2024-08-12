@@ -6,16 +6,16 @@
 
 2. **Example of a Random Variable:**
    - Flipping a coin:
-     - Variable \( X \) = Number of heads.
-     - Possible values for \( X \): 0 (tails) or 1 (heads).
-     - Probability of \( X = 1 \) is 0.5.
-     - Probability of \( X = 0 \) is also 0.5.
+     - Variable $X$ = Number of heads.
+     - Possible values for $X$: 0 (tails) or 1 (heads).
+     - Probability of $X = 1$ is 0.5.
+     - Probability of $X = 0$ is also 0.5.
 
 3. **Extended Example:**
    - For 10 coin tosses:
-     - Possible values for \( X \) range from 0 to 10 heads.
-     - Probability calculations: Each scenario where heads and tails are independent has a probability of \( \frac{1}{2^{10}} \).
-     - For varying numbers of heads (e.g., \( X = 9 \)), the probability is more complex.
+     - Possible values for $X$ range from 0 to 10 heads.
+     - Probability calculations: Each scenario where heads and tails are independent has a probability of $\frac{1}{2^{10}}$.
+     - For varying numbers of heads (e.g., $X = 9$ ), the probability is more complex.
 
 4. **Experimentation Approach:**
    - Conduct an experiment repeatedly to estimate probabilities.
@@ -34,7 +34,7 @@
 
 7. **Differences from Algebraic Variables:**
    - Deterministic Variables:
-     - Have fixed outcomes (e.g., \( x = 2 \), \( f(x) = x^2 \)).
+     - Have fixed outcomes ( e.g., $x = 2$, $f(x) = x^2$ ).
    - Random Variables:
      - Associated with uncertain outcomes and can take many values.
 
@@ -116,16 +116,14 @@ The binomial distribution models the number of successes (e.g., heads in coin to
 #### Key Concepts
 
 1. **Binomial Distribution Basics:**
-   - **Definition:** The distribution of the number of successes in \( n \) independent Bernoulli trials, each with a probability \( p \) of success.
-   - **Histogram:** Shows the probabilities of obtaining different numbers of successes (e.g., heads) in \( n \) trials.
+   - **Definition:** The distribution of the number of successes in $n$ independent Bernoulli trials, each with a probability $p$ of success.
+   - **Histogram:** Shows the probabilities of obtaining different numbers of successes (e.g., heads) in $n$ trials.
 
 2. **Example: Coin Tosses**
    - **Number of Trials (n):** 10 coin tosses.
    - **Possible Outcomes:** Number of heads can range from 0 to 10.
-   - **Probability Mass Function (PMF):** The probability of getting exactly \( k \) heads is given by:
-     \[
-     P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
-     \]
+   - **Probability Mass Function (PMF):** The probability of getting exactly $k$ heads is given by:
+     $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
      Where:
      - \(\binom{n}{k}\) is the binomial coefficient.
      - \(p\) is the probability of getting heads.
@@ -133,38 +131,30 @@ The binomial distribution models the number of successes (e.g., heads in coin to
 
 3. **Calculating Probabilities:**
    - **Example:** Probability of getting exactly 2 heads in 5 coin tosses:
-     \[
-     P(X = 2) = \binom{5}{2} \left(\frac{1}{2}\right)^2 \left(\frac{1}{2}\right)^{5-2}
-     \]
+     $$P(X = 2) = \binom{5}{2} \left(\frac{1}{2}\right)^2 \left(\frac{1}{2}\right)^{5-2}$$
      - \(\binom{5}{2} = \frac{5!}{2!(5-2)!} = 10\)
      - Probability = \(10 \cdot \left(\frac{1}{2}\right)^5 = \frac{10}{32} = 0.3125\)
 
 4. **General Formula:**
-   - **Binomial Coefficient:** Counts the number of ways to choose \( k \) successes (heads) out of \( n \) trials (coin tosses).
-     \[
-     \binom{n}{k} = \frac{n!}{k!(n-k)!}
-     \]
+   - **Binomial Coefficient:** Counts the number of ways to choose $k$ successes (heads) out of $n$ trials (coin tosses).
+     $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
    - **PMF for General Case:**
-     \[
-     P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}
-     \]
-     Where \( X \) is the random variable representing the number of successes.
+     $$P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}$$
+     Where $X$ is the random variable representing the number of successes.
 
 5. **Symmetry Property:**
-   - When \( p = 0.5 \), the PMF is symmetrical around \( n/2 \), reflecting equal probabilities of success and failure.
+   - When $p = 0.5$, the PMF is symmetrical around $n/2$, reflecting equal probabilities of success and failure.
 
 6. **Example with Dice:**
    - **Number of Trials (n):** 5 dice rolls.
-   - **Probability of Success (getting a 1):** \( p = \frac{1}{6} \).
+   - **Probability of Success (getting a 1):** $p = \frac{1}{6}$.
    - **Probability of getting exactly 3 ones:**
-     \[
-     P(X = 3) = \binom{5}{3} \left(\frac{1}{6}\right)^3 \left(\frac{5}{6}\right)^{5-3}
-     \]
+     $$P(X = 3) = \binom{5}{3} \left(\frac{1}{6}\right)^3 \left(\frac{5}{6}\right)^{5-3}$$
 
 7. **Another Example:**
    - **Number of Trials (n):** 10 dice rolls.
-   - **Probability of Success (getting a 1):** \( p = \frac{1}{6} \).
-   - **PMF Parameters:** \( n = 10 \), \( p = \frac{1}{6} \).
+   - **Probability of Success (getting a 1):** $p = \frac{1}{6}$.
+   - **PMF Parameters:** $n = 10$, $p = \frac{1}{6}$.
 
 The binomial distribution is a powerful tool for modeling scenarios with a fixed number of trials and a consistent probability of success, such as coin tosses or dice rolls.
 
@@ -175,18 +165,14 @@ The binomial coefficient and distribution are foundational concepts in probabili
 #### Binomial Coefficient
 
 1. **Concept:**
-   - **Definition:** The binomial coefficient \( \binom{n}{k} \) represents the number of ways to choose \( k \) elements from a set of \( n \) elements without regard to order.
+   - **Definition:** The binomial coefficient $\binom{n}{k}$ represents the number of ways to choose $k$ elements from a set of $n$ elements without regard to order.
    - **Formula:**
-     \[
-     \binom{n}{k} = \frac{n!}{k!(n-k)!}
-     \]
-     where \( n! \) (n factorial) is the product of all positive integers up to \( n \).
+     $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+     where $n!$ (n factorial) is the product of all positive integers up to $n$.
 
 2. **Example Calculation:**
-   - For \( n = 5 \) and \( k = 2 \):
-     \[
-     \binom{5}{2} = \frac{5!}{2!(5-2)!} = \frac{5 \times 4}{2 \times 1} = 10
-     \]
+   - For $n = 5$ and $k = 2$:
+     $$\binom{5}{2} = \frac{5!}{2!(5-2)!} = \frac{5 \times 4}{2 \times 1} = 10$$
 
 #### Binomial Distribution
 
@@ -195,30 +181,24 @@ The binomial coefficient and distribution are foundational concepts in probabili
 
 2. **Probability Mass Function (PMF):**
    - **Formula:**
-     \[
-     P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
-     \]
+     $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
      where:
-     - \( n \) = number of trials
-     - \( k \) = number of successes
-     - \( p \) = probability of success
-     - \( (1-p) \) = probability of failure
+     - $n$ = number of trials
+     - $k$ = number of successes
+     - $p$ = probability of success
+     - $(1-p)$ = probability of failure
 
    - **Example Calculation:**
-     - If \( n = 5 \), \( p = 0.3 \), and \( k = 2 \):
-       \[
-       P(X = 2) = \binom{5}{2} (0.3)^2 (0.7)^{5-2}
-       \]
-       \[
-       = 10 \cdot (0.09) \cdot (0.343) = 0.3105
-       \]
+     - If $n = 5$, $p = 0.3$, and $k = 2$:
+       $$  P(X = 2) = \binom{5}{2} (0.3)^2 (0.7)^{5-2}$$
+       $$  = 10 \cdot (0.09) \cdot (0.343) = 0.3105$$
 
 3. **Symmetry and Bias:**
-   - **Symmetry:** When \( p = 0.5 \), the distribution is symmetrical.
-   - **Bias:** When \( p \neq 0.5 \), the distribution is skewed. For example, if \( p = 0.3 \), the distribution will be skewed towards fewer successes.
+   - **Symmetry:** When $p = 0.5$, the distribution is symmetrical.
+   - **Bias:** When $p \neq 0.5$, the distribution is skewed. For example, if $p = 0.3$, the distribution will be skewed towards fewer successes.
 
 4. **Plotting:**
-   - The histogram of probabilities for different values of \( k \) (number of successes) can be plotted to visualize the binomial distribution. For biased coins or dice, probabilities adjust according to the specific value of \( p \).
+   - The histogram of probabilities for different values of $k$ (number of successes) can be plotted to visualize the binomial distribution. For biased coins or dice, probabilities adjust according to the specific value of $p$.
 
 #### Practical Applications
 
@@ -236,12 +216,12 @@ In summary, the binomial coefficient helps in counting combinations, while the b
 
 The Bernoulli distribution is indeed fundamental in probability and statistics, especially as it forms the basis for more complex distributions like the binomial distribution. In the Bernoulli distribution:
 
-- **Success** is defined by the probability \( p \).
-- **Failure** is defined by the probability \( 1 - p \).
+- **Success** is defined by the probability $p$.
+- **Failure** is defined by the probability $1 - p$.
 
-For a Bernoulli random variable \( X \), the probability mass function (PMF) is given by:
-- \( P(X = 1) = p \)
-- \( P(X = 0) = 1 - p \)
+For a Bernoulli random variable $X$, the probability mass function (PMF) is given by:
+- $P(X = 1) = p$
+- $P(X = 0) = 1 - p$
 
 This makes it quite versatile for modeling binary outcomes across various contexts. If you have any specific questions or need examples, feel free to ask!
 
@@ -289,18 +269,18 @@ This makes it quite versatile for modeling binary outcomes across various contex
 #### **Key Concepts for Continuous Distributions:**
 
 1. **Probability Density Function (PDF):**
-   - **Definition:** A function \( f(x) \) that represents the density of the probability at each point \( x \).
+   - **Definition:** A function $f(x)$ that represents the density of the probability at each point $x$.
    - **Interpretation:** The height of the PDF at any point represents the relative likelihood of the random variable being near that point, but not the probability itself.
    - **Area Under the Curve:** To find the probability of the random variable falling within an interval, calculate the area under the PDF curve over that interval.
 
 2. **Probability Calculations:**
    - **Exact Value:** The probability of the random variable taking any exact value is 0.
    - **Intervals:** To find the probability that the variable falls within an interval, integrate the PDF over that interval.
-     - For example, if \( f(x) \) is the PDF and we want the probability of \( X \) falling between \( a \) and \( b \), compute \( \int_{a}^{b} f(x) \, dx \).
+     - For example, if $f(x)$ is the PDF and we want the probability of $X$ falling between $a$ and $b$, compute $\int_{a}^{b} f(x) \, dx$.
 
 3. **Requirements for a PDF:**
-   - **Non-Negative:** \( f(x) \geq 0 \) for all \( x \) in the real line.
-   - **Normalization:** The total area under the curve must equal 1, representing the certainty that the variable will fall somewhere within its range. Mathematically, \( \int_{-\infty}^{\infty} f(x) \, dx = 1 \).
+   - **Non-Negative:** $f(x) \geq 0$ for all $x$ in the real line.
+   - **Normalization:** The total area under the curve must equal 1, representing the certainty that the variable will fall somewhere within its range. Mathematically, $\int_{-\infty}^{\infty} f(x) \, dx = 1$.
 
 #### **Visualizing PDF and Probability:**
 
@@ -311,11 +291,9 @@ This makes it quite versatile for modeling binary outcomes across various contex
 
 #### **Concept Overview:**
 
-- **Definition:** The Cumulative Distribution Function (CDF) provides the probability that a random variable \( X \) is less than or equal to a certain value \( x \). Mathematically, it's expressed as:
-  \[
-  F(x) = P(X \leq x)
-  \]
-  where \( F(x) \) denotes the CDF of \( X \) at \( x \).
+- **Definition:** The Cumulative Distribution Function (CDF) provides the probability that a random variable $X$ is less than or equal to a certain value $x$. Mathematically, it's expressed as:
+  $$F(x) = P(X \leq x)$$
+  where $F(x)$ denotes the CDF of $X$ at $x$.
 
 #### **Discrete vs. Continuous Distributions:**
 
@@ -330,15 +308,13 @@ This makes it quite versatile for modeling binary outcomes across various contex
 #### **Properties of the CDF:**
 
 1. **Range:** The CDF values lie between 0 and 1.
-   \[
-   0 \leq F(x) \leq 1
-   \]
+   $$ 0 \leq F(x) \leq 1$$
 
 2. **Endpoints:**
-   - **Left Endpoint:** \( F(x) \) approaches 0 as \( x \) approaches negative infinity.
-   - **Right Endpoint:** \( F(x) \) approaches 1 as \( x \) approaches positive infinity.
+   - **Left Endpoint:** $F(x)$ approaches 0 as $x$ approaches negative infinity.
+   - **Right Endpoint:** $F(x)$ approaches 1 as $x$ approaches positive infinity.
 
-3. **Monotonicity:** The CDF is a non-decreasing function. It cannot decrease as \( x \) increases.
+3. **Monotonicity:** The CDF is a non-decreasing function. It cannot decrease as $x$ increases.
 
 #### **Relationships Between PDF and CDF:**
 
@@ -346,11 +322,9 @@ This makes it quite versatile for modeling binary outcomes across various contex
   - **CDF Calculation:** Cumulative probabilities are computed by summing up the probabilities of outcomes up to a given point. For example, if the probability mass function (PMF) provides the probabilities for call durations in specific intervals, the CDF accumulates these probabilities.
 
 - **For Continuous Variables:**
-  - **CDF Calculation:** The CDF is computed by integrating the probability density function (PDF) from negative infinity to \( x \). In other words:
-    \[
-    F(x) = \int_{-\infty}^{x} f(t) \, dt
-    \]
-    where \( f(t) \) is the PDF.
+  - **CDF Calculation:** The CDF is computed by integrating the probability density function (PDF) from negative infinity to $x$. In other words:
+    $$  F(x) = \int_{-\infty}^{x} f(t) \, dt$$
+    where $f(t)$ is the PDF.
 
 #### **Use Cases:**
 
@@ -382,52 +356,44 @@ The uniform distribution is a fundamental continuous distribution where all valu
 - **Definition:** The PDF of a uniform distribution is constant over the interval \([a, b]\) and zero outside this interval. 
 
 - **Formula:** 
-  \[
-  f(x) = \frac{1}{b - a}
-  \]
-  for \( a \leq x \leq b \), and \( f(x) = 0 \) otherwise.
+  $$f(x) = \frac{1}{b - a}$$
+  for $a \leq x \leq b$, and $f(x) = 0$ otherwise.
 
-- **Explanation:** The height of the PDF is constant and equal to \( \frac{1}{b - a} \), where \( b - a \) is the length of the interval. This ensures that the total area under the PDF curve is 1.
+- **Explanation:** The height of the PDF is constant and equal to $\frac{1}{b - a}$, where $b - a$ is the length of the interval. This ensures that the total area under the PDF curve is 1.
 
-- **Example for \( a = 0 \) and \( b = 15 \):**
-  \[
-  f(x) = \frac{1}{15 - 0} = \frac{1}{15} \approx 0.067
-  \]
+- **Example for $a = 0$ and $b = 15$:**
+  $$f(x) = \frac{1}{15 - 0} = \frac{1}{15} \approx 0.067$$
 
 #### **3. Cumulative Distribution Function (CDF):**
 
-- **Definition:** The CDF gives the probability that the random variable \( X \) is less than or equal to a value \( x \). 
+- **Definition:** The CDF gives the probability that the random variable $X$ is less than or equal to a value $x$. 
 
 - **Formula:**
-  \[
-  F(x) = \begin{cases}
+  $$F(x) = \begin{cases}
   0 & \text{for } x < a \\
   \frac{x - a}{b - a} & \text{for } a \leq x \leq b \\
   1 & \text{for } x > b
-  \end{cases}
-  \]
+  \end{cases}$$
 
 - **Explanation:**
-  - For \( x < a \), the CDF is 0 because no probability is accumulated before \( a \).
-  - For \( a \leq x \leq b \), the CDF is a linear function that increases from 0 to 1. It is calculated as the proportion of the interval \([a, x]\) relative to \([a, b]\).
-  - For \( x > b \), the CDF is 1 because all possible probability has been accumulated.
+  - For $x < a$, the CDF is 0 because no probability is accumulated before $a$.
+  - For $a \leq x \leq b$, the CDF is a linear function that increases from 0 to 1. It is calculated as the proportion of the interval \([a, x]\) relative to \([a, b]\).
+  - For $x > b$, the CDF is 1 because all possible probability has been accumulated.
 
-- **Example for \( a = 0 \) and \( b = 1 \):**
-  \[
-  F(x) = \begin{cases}
+- **Example for $a = 0$ and $b = 1$:**
+  $$F(x) = \begin{cases}
   0 & \text{for } x < 0 \\
   x & \text{for } 0 \leq x \leq 1 \\
   1 & \text{for } x > 1
-  \end{cases}
-  \]
+  \end{cases}$$
 
 #### **Graphical Representation:**
 
-- **PDF:** A horizontal line from \( a \) to \( b \) at height \( \frac{1}{b - a} \), with the line being zero outside this interval.
+- **PDF:** A horizontal line from $a$ to $b$ at height $\frac{1}{b - a}$, with the line being zero outside this interval.
 - **CDF:** 
-  - A horizontal line at 0 for \( x < a \).
-  - A straight line with a slope of \( \frac{1}{b - a} \) from \( a \) to \( b \).
-  - A horizontal line at 1 for \( x > b \).
+  - A horizontal line at 0 for $x < a$.
+  - A straight line with a slope of $\frac{1}{b - a}$ from $a$ to $b$.
+  - A horizontal line at 1 for $x > b$.
 
 ### **Summary:**
 
@@ -450,50 +416,44 @@ The normal distribution, also known as the Gaussian distribution, is one of the 
 #### **2. Probability Density Function (PDF):**
 
 - **Formula:**
-  \[
-  f(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left(-\frac{(x - \mu)^2}{2 \sigma^2} \right)
-  \]
+  $$f(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left(-\frac{(x - \mu)^2}{2 \sigma^2} \right)$$
   where:
-  - \( \mu \) is the mean (center of the distribution).
-  - \( \sigma \) is the standard deviation (spread or width of the distribution).
-  - \( \sigma^2 \) is the variance (square of the standard deviation).
+  - $\mu$ is the mean (center of the distribution).
+  - $\sigma$ is the standard deviation (spread or width of the distribution).
+  - $\sigma^2$ is the variance (square of the standard deviation).
 
 - **Characteristics:**
-  - The PDF is symmetric around the mean \( \mu \).
-  - The height of the PDF at any point \( x \) is determined by how far \( x \) is from the mean relative to the standard deviation.
+  - The PDF is symmetric around the mean $\mu$.
+  - The height of the PDF at any point $x$ is determined by how far $x$ is from the mean relative to the standard deviation.
 
-- **Standard Normal Distribution:** When \( \mu = 0 \) and \( \sigma = 1 \), the distribution is called the standard normal distribution. Its PDF simplifies to:
-  \[
-  f(x) = \frac{1}{\sqrt{2 \pi}} \exp \left(-\frac{x^2}{2} \right)
-  \]
+- **Standard Normal Distribution:** When $\mu = 0$ and $\sigma = 1$, the distribution is called the standard normal distribution. Its PDF simplifies to:
+  $$f(x) = \frac{1}{\sqrt{2 \pi}} \exp \left(-\frac{x^2}{2} \right)$$
 
 #### **3. Cumulative Distribution Function (CDF):**
 
 - **Formula:** The CDF does not have a closed-form expression but is the integral of the PDF. It is computed using tables or software.
 
 - **Characteristics:**
-  - The CDF starts at 0 for \( x \to -\infty \) and approaches 1 as \( x \to +\infty \).
-  - It represents the probability that a random variable \( X \) will take a value less than or equal to \( x \).
+  - The CDF starts at 0 for $x \to -\infty$ and approaches 1 as $x \to +\infty$.
+  - It represents the probability that a random variable $X$ will take a value less than or equal to $x$.
 
 #### **4. Properties:**
 
-- **Mean ( \( \mu \) ):** The center of the distribution. The highest point on the curve is at \( \mu \).
+- **Mean ( $\mu$ ):** The center of the distribution. The highest point on the curve is at $\mu$.
 
-- **Standard Deviation ( \( \sigma \) ):** Measures the spread of the distribution. A larger \( \sigma \) results in a wider and flatter curve.
+- **Standard Deviation ( $\sigma$ ):** Measures the spread of the distribution. A larger $\sigma$ results in a wider and flatter curve.
 
-- **Variance ( \( \sigma^2 \) ):** The square of the standard deviation, providing another measure of spread.
+- **Variance ( $\sigma^2$ ):** The square of the standard deviation, providing another measure of spread.
 
-- **Symmetry:** The distribution is symmetric around the mean \( \mu \).
+- **Symmetry:** The distribution is symmetric around the mean $\mu$.
 
 #### **5. Standardization:**
 
-- **Purpose:** Standardization converts any normal distribution into a standard normal distribution (with \( \mu = 0 \) and \( \sigma = 1 \)).
+- **Purpose:** Standardization converts any normal distribution into a standard normal distribution (with $\mu = 0$ and $\sigma = 1$).
 
 - **Transformation:**
-  \[
-  Z = \frac{X - \mu}{\sigma}
-  \]
-  where \( Z \) follows a standard normal distribution.
+  $$Z = \frac{X - \mu}{\sigma}$$
+  where $Z$ follows a standard normal distribution.
 
 - **Usefulness:** Standardizing allows for the comparison of different normal distributions and simplifies calculations.
 
@@ -507,7 +467,7 @@ The normal distribution, also known as the Gaussian distribution, is one of the 
 
 #### **Summary:**
 
-- **The Normal Distribution** is fundamental in statistics, characterized by its bell-shaped curve, mean \( \mu \), and standard deviation \( \sigma \).
+- **The Normal Distribution** is fundamental in statistics, characterized by its bell-shaped curve, mean $\mu$, and standard deviation $\sigma$.
 - **PDF and CDF:** The PDF describes the likelihood of different outcomes, while the CDF provides the cumulative probability up to a point.
 - **Standardization** is used to convert any normal distribution to the standard normal distribution for easier analysis and comparison.
 
@@ -521,57 +481,48 @@ In communications, understanding noise and its impact on transmitted signals is 
 
 #### **1. Noise and Power:**
 
-- **Noise in Communication:** When transmitting a message, noise can corrupt the signal. This noise, \( Z \), can originate from various sources such as interference, obstructions, and environmental conditions.
+- **Noise in Communication:** When transmitting a message, noise can corrupt the signal. This noise, $Z$, can originate from various sources such as interference, obstructions, and environmental conditions.
 
-- **Gaussian Noise:** The noise \( Z \) is often assumed to follow a Gaussian distribution with mean \( \mu = 0 \) and variance \( \sigma^2 = 1 \) (standard normal distribution).
+- **Gaussian Noise:** The noise $Z$ is often assumed to follow a Gaussian distribution with mean $\mu = 0$ and variance $\sigma^2 = 1$ (standard normal distribution).
 
-- **Noise Power:** The power of the noise, denoted as \( W \), is given by the square of the noise:
-  \[
-  W = Z^2
-  \]
+- **Noise Power:** The power of the noise, denoted as $W$, is given by the square of the noise:
+  $$W = Z^2$$
   This power measure is crucial for assessing the impact of noise on the signal.
 
 #### **2. Distribution of Noise Power (Chi-Squared Distribution):**
 
-- **Chi-Squared Distribution:** The noise power \( W \) follows a Chi-squared distribution. Specifically:
-  \[
-  W \sim \text{Chi-squared}(\text{df})
-  \]
+- **Chi-Squared Distribution:** The noise power $W$ follows a Chi-squared distribution. Specifically:
+  $$W \sim \text{Chi-squared}(\text{df})$$
   where "df" stands for degrees of freedom.
 
-- **Single Degree of Freedom:** For \( Z \) following a standard normal distribution, \( W = Z^2 \) follows a Chi-squared distribution with 1 degree of freedom.
+- **Single Degree of Freedom:** For $Z$ following a standard normal distribution, $W = Z^2$ follows a Chi-squared distribution with 1 degree of freedom.
 
   - **PDF:** The probability density function (PDF) of a Chi-squared distribution with 1 degree of freedom is:
-    \[
-    f_W(w) = \frac{1}{\sqrt{2\pi w}} \exp \left(-\frac{w}{2} \right) \text{ for } w > 0
+    $$  f_W(w) = \frac{1}{\sqrt{2\pi w}} \exp \left(-\frac{w}{2} \right) \text{ for } w > 0
     \]
-    This PDF shows a distribution that starts high for small values of \( w \) and tapers off for larger values.
+    This PDF shows a distribution that starts high for small values of $w$ and tapers off for larger values.
 
   - **CDF:** The cumulative distribution function (CDF) of the Chi-squared distribution can be obtained by integrating the PDF.
 
 #### **3. Multiple Degrees of Freedom:**
 
-- **Sum of Squared Normals:** If you have \( K \) independent standard normal variables, \( Z_1, Z_2, \ldots, Z_K \), the noise power over \( K \) transmissions is given by:
-  \[
-  W = Z_1^2 + Z_2^2 + \cdots + Z_K^2
-  \]
-  This follows a Chi-squared distribution with \( K \) degrees of freedom.
+- **Sum of Squared Normals:** If you have $K$ independent standard normal variables, $Z_1, Z_2, \ldots, Z_K$, the noise power over $K$ transmissions is given by:
+  $$W = Z_1^2 + Z_2^2 + \cdots + Z_K^2$$
+  This follows a Chi-squared distribution with $K$ degrees of freedom.
 
-  - **Chi-Squared with \( K \) Degrees of Freedom:** As \( K \) increases, the Chi-squared distribution becomes more symmetric and its PDF becomes more spread out.
+  - **Chi-Squared with $K$ Degrees of Freedom:** As $K$ increases, the Chi-squared distribution becomes more symmetric and its PDF becomes more spread out.
 
-  - **PDF for \( K \) Degrees of Freedom:**
-    \[
-    f_W(w) = \frac{1}{2^{K/2} \Gamma(K/2)} w^{(K/2) - 1} \exp \left(-\frac{w}{2} \right)
-    \]
-    where \( \Gamma \) is the gamma function.
+  - **PDF for $K$ Degrees of Freedom:**
+    $$  f_W(w) = \frac{1}{2^{K/2} \Gamma(K/2)} w^{(K/2) - 1} \exp \left(-\frac{w}{2} \right)$$
+    where $\Gamma$ is the gamma function.
 
-  - **CDF for \( K \) Degrees of Freedom:** Similar to the single degree of freedom case, the CDF is obtained by integrating the PDF.
+  - **CDF for $K$ Degrees of Freedom:** Similar to the single degree of freedom case, the CDF is obtained by integrating the PDF.
 
 #### **4. Key Characteristics:**
 
-- **For Small \( W \):** The PDF grows rapidly due to the concentration of probability around small values.
+- **For Small $W$:** The PDF grows rapidly due to the concentration of probability around small values.
   
-- **For Large \( W \):** The PDF becomes flatter and more spread out.
+- **For Large $W$:** The PDF becomes flatter and more spread out.
 
 - **Degrees of Freedom Impact:** More degrees of freedom lead to a more symmetric and spread-out Chi-squared distribution.
 
@@ -589,52 +540,48 @@ Sampling from a probability distribution is an essential technique in both proba
 
 #### **1. Discrete Distribution Sampling**
 
-Consider a discrete distribution with outcomes \( \{a, b, c\} \) and corresponding probabilities \( p(a), p(b), p(c) \). For example:
+Consider a discrete distribution with outcomes $\{a, b, c\}$ and corresponding probabilities $p(a), p(b), p(c)$. For example:
 
 - **Probabilities:**
-  - \( p(a) = 0.3 \)
-  - \( p(b) = 0.5 \)
-  - \( p(c) = 0.2 \)
+  - $p(a) = 0.3$
+  - $p(b) = 0.5$
+  - $p(c) = 0.2$
 
 To sample from this distribution:
 
 1. **Cumulative Distribution Function (CDF):**
    - Construct the CDF by stacking the probabilities:
-     \[
-     \text{CDF}(x) = 
+     $$\text{CDF}(x) = 
      \begin{cases} 
      0 & \text{for } x < 0 \\
      0.3 & \text{for } 0 \leq x < 0.3 \\
      0.8 & \text{for } 0.3 \leq x < 0.8 \\
      1.0 & \text{for } x \geq 0.8
-     \end{cases}
-     \]
+     \end{cases}$$
 
 2. **Generate a Random Number:**
-   - Draw a random number \( r \) uniformly from the interval [0, 1].
+   - Draw a random number $r$ uniformly from the interval [0, 1].
 
 3. **Determine the Interval:**
-   - Find where \( r \) falls within the CDF intervals to assign the outcome. For instance:
-     - If \( r \in [0, 0.3) \), the outcome is \( a \).
-     - If \( r \in [0.3, 0.8) \), the outcome is \( b \).
-     - If \( r \in [0.8, 1) \), the outcome is \( c \).
+   - Find where $r$ falls within the CDF intervals to assign the outcome. For instance:
+     - If $r \in [0, 0.3)$, the outcome is $a$.
+     - If $r \in [0.3, 0.8)$, the outcome is $b$.
+     - If $r \in [0.8, 1)$, the outcome is $c$.
 
 #### **2. Continuous Distribution Sampling**
 
 For continuous distributions, such as the Gaussian distribution, the process is similar but involves the CDF of the continuous distribution.
 
 1. **Cumulative Distribution Function (CDF):**
-   - The CDF \( F(x) \) for a continuous distribution maps each value \( x \) to a probability between 0 and 1.
+   - The CDF $F(x)$ for a continuous distribution maps each value $x$ to a probability between 0 and 1.
 
 2. **Generate a Random Number:**
-   - Draw a random number \( r \) uniformly from [0, 1].
+   - Draw a random number $r$ uniformly from [0, 1].
 
 3. **Use the Inverse CDF:**
-   - To find the corresponding value \( x \) from the continuous distribution, use the inverse CDF (also known as the quantile function):
-     \[
-     x = F^{-1}(r)
-     \]
-   - This process maps the uniform random number \( r \) to a value in the distribution according to its CDF.
+   - To find the corresponding value $x$ from the continuous distribution, use the inverse CDF (also known as the quantile function):
+     $$x = F^{-1}(r)$$
+   - This process maps the uniform random number $r$ to a value in the distribution according to its CDF.
 
 #### **Example: Gaussian Distribution**
 
@@ -644,10 +591,10 @@ To sample from a Gaussian distribution:
    - Compute the CDF for the Gaussian distribution and then use the inverse CDF to get the sampled value.
 
 2. **Uniform Sampling:**
-   - Generate a uniform random number \( r \) between 0 and 1.
+   - Generate a uniform random number $r$ between 0 and 1.
 
-3. **Find \( x \) Using Inverse CDF:**
-   - Compute \( x = F^{-1}(r) \), where \( F^{-1} \) is the inverse of the CDF of the Gaussian distribution.
+3. **Find $x$ Using Inverse CDF:**
+   - Compute $x = F^{-1}(r)$, where $F^{-1}$ is the inverse of the CDF of the Gaussian distribution.
 
 #### **Applications in Machine Learning**
 
