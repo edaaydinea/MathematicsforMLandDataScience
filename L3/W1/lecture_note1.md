@@ -495,23 +495,23 @@ Let's analyze the problem using Bayes' Theorem to determine the probability that
 ### Using Bayes' Theorem
 
 **Bayes' Theorem Formula:**
-$$P(A|B) = \frac{P(A)P(B|A)}{P(B)}
+$$P(A|B) = \frac{P(A)P(B|A)}{P(B)}$$
 
 **Calculations:**
 
-1. **Prior Probability of Spam ($P(A)$):**
+1. **Prior Probability of Spam $P(A)$ :**
    $$P(A) = \frac{20}{100} = 0.2$$
 
-2. **Prior Probability of Not Spam ($P(\neg A)$):**
+2. **Prior Probability of Not Spam $P(\neg A)$ :**
    $$P(\neg A) = 1 - P(A) = 0.8$$
 
-3. **Probability of "lottery" given Spam ($P(B|A)$):**
+3. **Probability of "lottery" given Spam $P(B|A)$ :**
    $$P(B|A) = \frac{14}{20} = 0.7$$
 
-4. **Probability of "lottery" given Not Spam ($P(B|\neg A)$):**
+4. **Probability of "lottery" given Not Spam $P(B|\neg A)$ :**
    $$P(B|\neg A) = \frac{10}{80} = 0.125$$
 
-5. **Total Probability of "lottery" ($P(B)$):**
+5. **Total Probability of "lottery" $P(B)$ :**
    $$P(B) = P(B|A)P(A) + P(B|\neg A)P(\neg A)$$
    
    $$P(B) = (0.7 \times 0.2) + (0.125 \times 0.8)$$
@@ -520,7 +520,7 @@ $$P(A|B) = \frac{P(A)P(B|A)}{P(B)}
    
    $$P(B) = 0.24$$
 
-6. **Posterior Probability ($P(A|B)$):**
+6. **Posterior Probability $P(A|B)$ :**
    $$P(A|B) = \frac{P(A)P(B|A)}{P(B)}$$
 
    $$P(A|B) = \frac{0.2 \times 0.7}{0.24}$$
