@@ -449,40 +449,27 @@ To determine the probability of having a disease given a positive test result, w
 - Find $P(A|B)$, the probability of being sick given a positive test result.
 
 **Bayes' Theorem Formula**:
-$$
-P(A|B) = \frac{P(A) P(B|A)}{P(B)}
-$$
+$$P(A|B) = \frac{P(A) P(B|A)}{P(B)}$$
 
 To compute $P(B)$, the total probability of testing positive, we consider both scenarios (sick and not sick):
-$$
-P(B) = P(B|A)P(A) + P(B|\neg A)P(\neg A)
-$$
+$$P(B) = P(B|A)P(A) + P(B|\neg A)P(\neg A)$$
 
 ### Calculation Steps
 1. **Calculate $P(B)$**:
-   $$
-   P(B) = (0.99 \times 0.0001) + (0.01 \times 0.9999)
-   $$
-   $$
-   P(B) = 0.000099 + 0.009999
-   $$
-   $$
-   P(B) = 0.010098
-   $$
+   $$P(B) = (0.99 \times 0.0001) + (0.01 \times 0.9999)$$
+   
+   $$P(B) = 0.000099 + 0.009999$$
+   
+   $$P(B) = 0.010098$$
 
 2. **Calculate $P(A|B)$**:
-   $$
-   P(A|B) = \frac{P(A)P(B|A)}{P(B)}
-   $$
-   $$
-   P(A|B) = \frac{0.0001 \times 0.99}{0.010098}
-   $$
-   $$
-   P(A|B) = \frac{0.000099}{0.010098}
-   $$
-   $$
-   P(A|B) \approx 0.0098
-   $$
+   $$P(A|B) = \frac{P(A)P(B|A)}{P(B)}$$
+
+   $$P(A|B) = \frac{0.0001 \times 0.99}{0.010098}$$
+   
+   $$P(A|B) = \frac{0.000099}{0.010098}$$
+   
+   $$P(A|B) \approx 0.0098$$
 
 ### Conclusion
 The probability of being sick given a positive test result is approximately 0.98%, despite the test's high accuracy. This low probability is primarily due to the rarity of the disease compared to the population size, causing the number of false positives to outweigh the true positives. This scenario exemplifies the importance of considering base rates in medical testing and probabilistic reasoning.
@@ -508,62 +495,39 @@ Let's analyze the problem using Bayes' Theorem to determine the probability that
 ### Using Bayes' Theorem
 
 **Bayes' Theorem Formula:**
-$$
-P(A|B) = \frac{P(A)P(B|A)}{P(B)}
-$$
+$$P(A|B) = \frac{P(A)P(B|A)}{P(B)}
 
 **Calculations:**
 
 1. **Prior Probability of Spam ($P(A)$):**
-   $$
-   P(A) = \frac{20}{100} = 0.2
-   $$
+   $$P(A) = \frac{20}{100} = 0.2$$
 
 2. **Prior Probability of Not Spam ($P(\neg A)$):**
-   $$
-   P(\neg A) = 1 - P(A) = 0.8
-   $$
+   $$P(\neg A) = 1 - P(A) = 0.8$$
 
 3. **Probability of "lottery" given Spam ($P(B|A)$):**
-   $$
-   P(B|A) = \frac{14}{20} = 0.7
-   $$
+   $$P(B|A) = \frac{14}{20} = 0.7$$
 
 4. **Probability of "lottery" given Not Spam ($P(B|\neg A)$):**
-   $$
-   P(B|\neg A) = \frac{10}{80} = 0.125
-   $$
+   $$P(B|\neg A) = \frac{10}{80} = 0.125$$
 
 5. **Total Probability of "lottery" ($P(B)$):**
-   $$
-   P(B) = P(B|A)P(A) + P(B|\neg A)P(\neg A)
-   $$
-   $$
-   P(B) = (0.7 \times 0.2) + (0.125 \times 0.8)
-   $$
-   $$
-   P(B) = 0.14 + 0.1
-   $$
-   $$
-   P(B) = 0.24
-   $$
+   $$P(B) = P(B|A)P(A) + P(B|\neg A)P(\neg A)$$
+   
+   $$P(B) = (0.7 \times 0.2) + (0.125 \times 0.8)$$
+   
+   $$P(B) = 0.14 + 0.1$$
+   
+   $$P(B) = 0.24$$
 
 6. **Posterior Probability ($P(A|B)$):**
-   $$
-   P(A|B) = \frac{P(A)P(B|A)}{P(B)}
-   $$
-   
-   $$
-   P(A|B) = \frac{0.2 \times 0.7}{0.24}
-   $$
+   $$P(A|B) = \frac{P(A)P(B|A)}{P(B)}$$
 
-   $$
-   P(A|B) = \frac{0.14}{0.24}
-   $$
+   $$P(A|B) = \frac{0.2 \times 0.7}{0.24}$$
 
-   $$
-   P(A|B) \approx 0.583
-   $$
+   $$P(A|B) = \frac{0.14}{0.24}$$
+
+   $$P(A|B) \approx 0.583$$
 
 ### Conclusion
 
@@ -655,9 +619,7 @@ The posterior probability always provides a more refined estimate than the prior
 
    - **Posterior (P(spam | lottery, winning)):** 
      - Calculation: 
-       $$
-       \frac{P(spam) \cdot P(lottery | spam) \cdot P(winning | spam)}{P(spam) \cdot P(lottery | spam) \cdot P(winning | spam) + P(ham) \cdot P(lottery | ham) \cdot P(winning | ham)}
-       $$
+       $$\frac{P(spam) \cdot P(lottery | spam) \cdot P(winning | spam)}{P(spam) \cdot P(lottery | spam) \cdot P(winning | spam) + P(ham) \cdot P(lottery | ham) \cdot P(winning | ham)}$$
      - Result: 0.913
 
 7. **Conclusion:**
