@@ -55,6 +55,12 @@
 - **Week 2: Describing probability distributions and probability distributions with multiple variables**
 - **Week 3: Sampling and Point estimation**
 - **Week 4: Confidence intervals and Hypothesis Testing**
+
+- **Week 2: Describing probability distributions and probability distributions with multiple variables**
+  - [Lecture Note](L3/W2/lecture_note.ipynb)
+  - [Summary statistics and visualization of data sets](L3/W2/C2W2_UGL_datasets.ipynb)
+  - [Exploratory Data Analysis - Data Visualization and Summary Statistics](L3/W2/Rideshare_Project_Week2.ipynb)
+  - [Lab: Simulate Dice Throws with NumPy](L3/W2/C3W2_UGL_Dice_Simulations.ipynb)
 ...
 
 ## Certificates
