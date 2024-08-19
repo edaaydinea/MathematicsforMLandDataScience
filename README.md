@@ -61,6 +61,11 @@
   - [Summary statistics and visualization of data sets](L3/W2/C2W2_UGL_datasets.ipynb)
   - [Exploratory Data Analysis - Data Visualization and Summary Statistics](L3/W2/Rideshare_Project_Week2.ipynb)
   - [Lab: Simulate Dice Throws with NumPy](L3/W2/C3W2_UGL_Dice_Simulations.ipynb)
+
+- **Week 3: Sampling and Point Estimation**
+  - [Lecture Note](L3/W3/lecture_note.ipynb)
+  - [Lab: Central Limit Theorem](L3/W3/C3W3_UGL_Central_Limit_Theorem.ipynb)
+  - [Lab: Exploratory Data Analysis - Linear Regression](L3/W3/linear-regression-world-happiness.ipynb)
 ...
 
 ## Certificates
